@@ -213,7 +213,7 @@ $(document).ready(function(){
 		var userMenuTrigger = $(this).find('.header-notifications-trigger a');
 
 		$(userMenuTrigger).on('click', function(event) {
-			event.preventDefault();
+			// event.preventDefault();
 
 			if ( $(this).closest(".header-notifications").is(".active") ) {
 	            close_user_dropdown();

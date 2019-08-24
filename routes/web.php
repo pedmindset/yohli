@@ -15,4 +15,16 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Auth::routes();
+Route::get('login', function () {
+    return view('auth.login');
+})->name('login.page');
+
+Route::get('register', function () {
+    return view('auth.register');
+})->name('register.page');
+
+Route::get('how-it-works', function () {
+    return abort(404);
+})->name('how-it-works');
+
+// Auth::routes();

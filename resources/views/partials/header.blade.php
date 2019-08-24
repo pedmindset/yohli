@@ -16,9 +16,32 @@
 				<nav id="navigation">
 					<ul id="responsive">
 
-						<li><a href="#" class="current">How it works</a></li>
-						<li><a href="#">Browse Jobs</a></li>
 						<li>
+							<a href="#" class="{{ (request()->is('how-it-works')) ? 'current' : '' }}">
+							How it works
+							</a>
+						</li>
+						<li>
+							<a href="#" class="{{ (request()->is('browse-jobs')) ? 'current' : '' }}">
+								Browse Jobs
+							</a>
+						</li>
+						<li class="d-sm-block d-md-none">
+							<a href="#" class="{{ (request()->is('post-job')) ? 'current' : '' }}">
+								Post a job
+							</a>
+						</li>
+						<li class="d-sm-block d-md-none">
+							<a href="{{ route('login.page') }}" class="{{ (request()->is('login')) ? 'current' : '' }}">
+								Log In
+							</a>
+						</li>
+						<li class="d-sm-block d-md-none">
+							<a href="{{ route('register.page') }}" class="{{ (request()->is('register')) ? 'current' : '' }}">
+								Register
+							</a>
+						</li>
+						<li class="d-none d-sm-none d-md-block">
 							<a href="#" class="button button-sliding-icon ripple-effect" tabindex="0">
 								<span class="text-white">Post a Job</span> 
 								<i class="icon-material-outline-add-circle-outline text-white"></i>
@@ -43,14 +66,14 @@
 					<div class="header-notifications">
 						<!-- Trigger -->
 						<div class="header-notifications-trigger">
-							<a href="#" class="text-uppercase">Login</a>
+							<a href="{{ route('login.page') }}" class="text-uppercase">Login</a>
 						</div>
 					</div>
 
 					<div class="header-notifications">
 						<!-- Trigger -->
 						<div class="header-notifications-trigger">
-							<a href="#" class="text-uppercase">Sign up</a>
+							<a href="{{ route('register.page') }}" class="text-uppercase">Register</a>
 						</div>
 					</div>
 
