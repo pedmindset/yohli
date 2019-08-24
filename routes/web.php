@@ -27,4 +27,8 @@ Route::get('how-it-works', function () {
     return abort(404);
 })->name('how-it-works');
 
+Route::get('post-job', function () {
+    return view('dashboard.post_job');
+})->name('post-job');
+
 // Auth::routes();

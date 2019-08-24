@@ -18,28 +18,47 @@
     <div id="wrapper">
         <!-- Header Container
         ================================================== -->
-        <header id="header-container" class="fullwidth">
+        <header id="header-container" class="fullwidth dashboard-header not-sticky">
             @include('partials.header')
         </header>
         <div class="clearfix"></div>
         <!-- Header Container / End -->
 
-        @if (Route::currentRouteName() == 'home')
-            <!-- Intro Banner
+        
+        <!-- Dashboard Container -->
+        <div class="dashboard-container">
+            <!-- Dashboard Sidebar
             ================================================== -->
-            @yield('intro_banner')
-        @else
-            <!-- Titlebar
+            @include('partials.dashboard_sidebar')
+            <!-- Dashboard Sidebar / End -->
+
+
+            <!-- Dashboard Content
             ================================================== -->
-            @include('partials.title_bar')
-        @endif
+            <div class="dashboard-content-container" data-simplebar>
+                <div class="dashboard-content-inner">
+                    <!-- Dashboard Headline -->
+                    @include('partials.dashboard_headline')
 
-        @yield('content')
+                    
+                    @yield('content')
 
-        <!-- Footer
-        ================================================== -->
-        @include('partials.footer')
-        <!-- Footer / End -->
+
+                    <!-- Footer -->
+                    @include('partials.dashboard_footer')
+                    <!-- Footer / End -->
+
+
+                </div>
+            </div>
+            <!-- Dashboard Content / End -->
+
+
+        </div>
+        <!-- Dashboard Container / End -->
+
+
+
     </div>
     <!-- Wrapper / End -->
 
