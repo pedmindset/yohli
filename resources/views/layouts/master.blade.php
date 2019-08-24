@@ -19,5 +19,28 @@
         <!-- Header Container
         ================================================== -->
         @include('partials.header')
+
+        @if (Route::currentRouteName() == 'home')
+            <!-- Intro Banner
+            ================================================== -->
+            @yield('intro_banner')
+        @else
+            <!-- Titlebar
+            ================================================== -->
+            @include('partials.title_bar')
+        @endif
+
+        @yield('content')
+
+        <!-- Footer
+        ================================================== -->
+        @include('partials.footer')
+        <!-- Footer / End -->
     </div>
+    <!-- Wrapper / End -->
+
+    <!-- Scripts
+    ================================================== -->
+    @include('partials.scripts')
+
 </body>
