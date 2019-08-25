@@ -12,7 +12,7 @@
                 <h1 class="hiw-big-text hiw-header">
                     Get the most from Yohli and live your work dream.
                 </h1>
-                <p>Yohli connects clients to expert freelancers who are available to hire by the hour or project.</p>
+                <p>Yohli connects clients to expert freelancers who are available to hire by the hour or job.</p>
             </div>
             <div class="col-md-6">
                 <img class="floating img-center img-fluid header-img" src="{{ asset('assets/images/ill/question.svg') }}">
