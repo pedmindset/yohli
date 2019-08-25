@@ -24,7 +24,7 @@ Route::get('register', function () {
 })->name('register.page');
 
 Route::get('how-it-works', function () {
-    return abort(404);
+    return view('how_it_works');
 })->name('how-it-works');
 
 Route::get('post-job', function () {

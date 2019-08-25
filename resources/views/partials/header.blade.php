@@ -17,7 +17,7 @@
 					<ul id="responsive">
 
 						<li>
-							<a href="#" class="{{ (request()->is('how-it-works')) ? 'current' : '' }}">
+							<a href="{{ route('how-it-works') }}" class="{{ (request()->is('how-it-works')) ? 'current' : '' }}">
 							How it works
 							</a>
 						</li>

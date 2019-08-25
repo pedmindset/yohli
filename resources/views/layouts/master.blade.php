@@ -24,10 +24,8 @@
         <div class="clearfix"></div>
         <!-- Header Container / End -->
 
-        @if (Route::currentRouteName() == 'home')
-            <!-- Intro Banner
-            ================================================== -->
-            @yield('intro_banner')
+        @if (Route::currentRouteName() == 'home' || Route::currentRouteName() == 'how-it-works')
+            
         @else
             <!-- Titlebar
             ================================================== -->

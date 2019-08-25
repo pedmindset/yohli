@@ -3,8 +3,6 @@
 
 @section('content')
 
-@section('intro_banner')
-<!-- add class "disable-gradient" to enable consistent background overlay -->
 <div class="intro-banner" data-background-image="{{ asset('assets/images/home-background.jpg') }}">
 	<div class="container">
 		
@@ -62,7 +60,6 @@
 
 	</div>
 </div>
-@endsection
 
 <!-- Category Boxes -->
 <div class="section margin-top-65">
