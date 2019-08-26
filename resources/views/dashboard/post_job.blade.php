@@ -10,16 +10,23 @@
 
 			<!-- Headline -->
 			<div class="headline">
-				<h3><i class="icon-feather-folder-plus"></i> Job Submission Form</h3>
+				<h3><i class="icon-feather-folder-plus"></i> Tell us what you need done</h3>
 			</div>
 
 			<div class="content with-padding padding-bottom-10">
 				<div class="row">
 
-					<div class="col-xl-4">
+					<div class="col-xl-12">
 						<div class="submit-field">
 							<h5>Job Title</h5>
 							<input type="text" class="with-border">
+						</div>
+					</div>
+
+					<div class="col-xl-12">
+						<div class="submit-field">
+							<h5>Job Description</h5>
+							<textarea cols="30" rows="5" class="with-border"></textarea>
 						</div>
 					</div>
 
@@ -103,8 +110,6 @@
 
 					<div class="col-xl-12">
 						<div class="submit-field">
-							<h5>Job Description</h5>
-							<textarea cols="30" rows="5" class="with-border"></textarea>
 							<div class="uploadButton margin-top-30">
 								<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload" multiple/>
 								<label class="uploadButton-button ripple-effect" for="upload">Upload Files</label>
