@@ -1,33 +1,37 @@
 .header-notifications a {
-    font-size: 15px !important;
+  font-size: 15px !important;
 }
 .bg-light-custom{
-    background: #F1F3F9;
+  background: #F1F3F9;
+}
+/* Hide bootstrap dropdown arrow */
+.dropdown-toggle::after {
+  display: none !important;
 }
 
 
 /* -------------------------------------------------------------- */
 /* HOW IT WORKS PAGE */
 .hiw-page .header-img{
-    height: 350px;
+  height: 350px;
 }
 .hiw-header {
-    font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono';
 }
 .hiw-big-text {
-    font-size: 3.0em;
-    color: #240B4F;
+  font-size: 3.0em;
+  color: #240B4F;
 }
 
 .hiw-page .section-head{
-    font-size: 2.2em;
-    font-weight: 600;
+  font-size: 2.2em;
+  font-weight: 600;
 }
 
 .hiw-page .tab__body p{
-    font-size: 1.2em;
-    line-height: 1.60256;
-    font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.60256;
+  font-weight: 300;
 }
 
 
