@@ -61,123 +61,101 @@
 	</div>
 </div>
 
-<!-- Category Boxes -->
-<div class="section margin-top-65">
+<!-- Popular Job Categories -->
+<div class="section margin-top-65 margin-bottom-30">
 	<div class="container">
 		<div class="row">
+
+			<!-- Section Headline -->
 			<div class="col-xl-12">
-
-				<div class="section-headline centered margin-bottom-15">
-					<h3>Popular Job Categories</h3>
+				<div class="section-headline centered margin-top-0 margin-bottom-45">
+					<h3>Popular Categories</h3>
 				</div>
-
-				<!-- Category Boxes Container -->
-				<div class="categories-container">
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-file-code-o"></i>
-						</div>
-						<div class="category-box-counter">612</div>
-						<div class="category-box-content">
-							<h3>Web & Software Dev</h3>
-							<p>Software Engineer, Web / Mobile Developer & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-cloud-upload"></i>
-						</div>
-						<div class="category-box-counter">113</div>
-						<div class="category-box-content">
-							<h3>Data Science & Analitycs</h3>
-							<p>Data Specialist / Scientist, Data Analyst & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-suitcase"></i>
-						</div>
-						<div class="category-box-counter">186</div>
-						<div class="category-box-content">
-							<h3>Accounting & Consulting</h3>
-							<p>Auditor, Accountant, Fnancial Analyst & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-pencil"></i>
-						</div>
-						<div class="category-box-counter">298</div>
-						<div class="category-box-content">
-							<h3>Writing & Translations</h3>
-							<p>Copywriter, Creative Writer, Translator & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-pie-chart"></i>
-						</div>
-						<div class="category-box-counter">549</div>						
-						<div class="category-box-content">
-							<h3>Sales & Marketing</h3>
-							<p>Brand Manager, Marketing Coordinator & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-image"></i>
-						</div>
-						<div class="category-box-counter">873</div>
-						<div class="category-box-content">
-							<h3>Graphics & Design</h3>
-							<p>Creative Director, Web Designer & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-bullhorn"></i>
-						</div>
-						<div class="category-box-counter">125</div>
-						<div class="category-box-content">
-							<h3>Digital Marketing</h3>
-							<p>Darketing Analyst, Social Profile Admin & More</p>
-						</div>
-					</a>
-
-					<!-- Category Box -->
-					<a href="#" class="category-box">
-						<div class="category-box-icon">
-							<i class="icon-line-awesome-graduation-cap"></i>
-						</div>
-						<div class="category-box-counter">445</div>
-						<div class="category-box-content">
-							<h3>Education & Training</h3>
-							<p>Advisor, Coach, Education Coordinator & More</p>
-						</div>
-					</a>
-
-				</div>
-
 			</div>
+
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-01.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Web / Software Dev</h3>
+						<span>612</span>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-02.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Data Science / Analitycs</h3>
+						<span>113</span>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-03.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Accounting / Consulting</h3>
+						<span>186</span>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-04.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Writing & Translations</h3>
+						<span>298</span>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-05.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Sales & Marketing</h3>
+						<span>549</span>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-06.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Graphics & Design</h3>
+						<span>873</span>
+					</div>
+				</a>
+			</div>
+			
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-07.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Digital Marketing</h3>
+						<span>125</span>
+					</div>
+				</a>
+			</div>
+
+			<div class="col-xl-3 col-md-6">
+				<!-- Photo Box -->
+				<a href="#" class="photo-box small" data-background-image="{{ asset('assets/images/job-category-08.jpg') }}">
+					<div class="photo-box-content">
+						<h3>Education & Training</h3>
+						<span>445</span>
+					</div>
+				</a>
+			</div>
+
 		</div>
 	</div>
 </div>
-<!-- Category Boxes / End -->
-
 <!-- Features Jobs -->
 <div class="section gray margin-top-45 padding-top-65 padding-bottom-75">
 	<div class="container">

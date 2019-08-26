@@ -11,13 +11,16 @@
 |
 */
 
+Auth::routes();
+
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
 Route::get('login', function () {
     return view('auth.login');
-})->name('login.page');
+})->name('login.page'); 
 
 Route::get('register', function () {
     return view('auth.register');
@@ -31,4 +34,9 @@ Route::get('post-job', function () {
     return view('dashboard.post_job');
 })->name('post-job');
 
-// Auth::routes();
+
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+
+
+Route::get('/home', 'HomeController@index')->name('home');
