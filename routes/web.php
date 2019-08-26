@@ -34,9 +34,8 @@ Route::get('post-job', function () {
     return view('dashboard.post_job');
 })->name('post-job');
 
+Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
 
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
-
-
-// Route::get('/home', 'HomeController@index')->name('home');
