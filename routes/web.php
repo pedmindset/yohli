@@ -37,5 +37,7 @@ Route::get('post-job', function () {
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
 
-Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
-Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
+Route::namespace("Auth")->group(function () {
+    Route::get('login/{provider}', 'LoginController@redirectToProvider');
+    Route::get('login/{provider}/callback', 'LoginController@handleProviderCallback');
+});
