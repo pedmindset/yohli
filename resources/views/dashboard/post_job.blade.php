@@ -14,21 +14,23 @@
 			</div>
 
 			<div class="content with-padding padding-bottom-10">
-				<div class="row">
 
+				<div class="row animated fadeInRight">
 					<div class="col-xl-12">
 						<div class="submit-field">
 							<h5>Job Title</h5>
 							<input type="text" class="with-border">
 						</div>
 					</div>
-
 					<div class="col-xl-12">
 						<div class="submit-field">
 							<h5>Job Description</h5>
 							<textarea cols="30" rows="5" class="with-border"></textarea>
 						</div>
 					</div>
+				</div>
+				
+				<div class="row d-none">
 
 					<div class="col-xl-4">
 						<div class="submit-field">
@@ -108,7 +110,7 @@
 						</div>
 					</div>
 
-					<div class="col-xl-12">
+					<div class="col-xl-12 wow slideInRight">
 						<div class="submit-field">
 							<div class="uploadButton margin-top-30">
 								<input class="uploadButton-input" type="file" accept="image/*, application/pdf" id="upload" multiple/>
@@ -129,3 +131,11 @@
 
 </div>
 @endsection
+
+@push('custom-scripts')
+    <script>
+		$(document).ready(function(){
+			// alert("Post Job");
+		});
+	</script>
+@endpush
