@@ -1,8 +1,11 @@
 @extends('layouts.master')
 @section('title', 'Log In')
+@section('title_bar')
+    @include('partials.title_bar')
+@endsection
 
 @section('content')
-    <div class="container">
+ <div class="container">
 	<div class="row">
 		<div class="col-xl-5 offset-xl-3">
 

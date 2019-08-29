@@ -1,11 +1,11 @@
-@extends('layouts.dashboard_master')
+@extends('layouts.master')
 @section('title', 'Post a job')
 
 @section('content')
-<div class="row">
+<div class="row mb-5 pj-page margin-top-100 margin-bottom-100">
 
 	<!-- Dashboard Box -->
-	<div class="col-xl-12">
+	<div class="col-sm-12 col-md-6 offset-md-3">
 		<div class="dashboard-box margin-top-0">
 
 			<!-- Headline -->
@@ -18,14 +18,20 @@
 					<div class="row form-section" id="section-1">
 						<div class="col-xl-12">
 							<div class="submit-field">
-								<h5>Job Title</h5>
-								<input type="text" class="with-border" id="title">
+								<h5>Select a name for the job</h5>
+								<input type="text" class="with-border" placeholder="e.g. I need a blog" id="title">
 							</div>
 						</div>
 						<div class="col-xl-12">
 							<div class="submit-field">
-								<h5>Job Description</h5>
-								<textarea cols="30" rows="5" class="with-border" id="description"></textarea>
+								<h5>Give a description of what the job entails</h5>
+								<textarea 
+									cols="30" 
+									rows="5" 
+									class="with-border" 
+									placeholder="Provide an accurate and detailed description that best suits the proposed job" 
+									id="description"
+								></textarea>
 							</div>
 						</div>
 						<div class="col-xl-12">
@@ -35,7 +41,7 @@
 					
 					<div class="row d-none animated fadeInUp form-section" id="section-2">
 
-						<div class="col-xl-4">
+						<div class="col-xl-6">
 							<div class="submit-field">
 								<h5>Job Type</h5>
 								<select class="selectpicker with-border" data-size="7" title="Select Job Type" id="type">
@@ -48,26 +54,26 @@
 							</div>
 						</div>
 
-						<div class="col-xl-4">
+						<div class="col-xl-6">
 							<div class="submit-field">
 								<h5>Job Category</h5>
-								<select class="selectpicker with-border" data-size="7" title="Select Category" id="category">
-									<option>Accounting and Finance</option>
-									<option>Clerical & Data Entry</option>
-									<option>Counseling</option>
-									<option>Court Administration</option>
-									<option>Human Resources</option>
-									<option>Investigative</option>
-									<option>IT and Computers</option>
-									<option>Law Enforcement</option>
-									<option>Management</option>
-									<option>Miscellaneous</option>
-									<option>Public Relations</option>
+								<select class="selectpicker with-border" data-size="7" title="Select Category" id="category">									
+									<option>Admin Support</option>
+									<option>Customer Service</option>
+									<option>Data Analytics</option>
+									<option>Design & Creative</option>
+									<option>Legal</option>
+									<option>Software Developing</option>
+									<option>IT & Networking</option>
+									<option>Web Developement</option>
+									<option>Writing</option>
+									<option>Translation</option>
+									<option>Sales & Marketing</option>
 								</select>
 							</div>
 						</div>
 
-						<div class="col-xl-4">
+						{{-- <div class="col-xl-4">
 							<div class="submit-field">
 								<h5>Location</h5>
 								<div class="input-with-icon">
@@ -77,7 +83,7 @@
 									<i class="icon-material-outline-location-on"></i>
 								</div>
 							</div>
-						</div>
+						</div> --}}
 
 						<div class="col-xl-12">
 							<button class="btn btn-outline-secondary next-btn" type="button">NEXT</button>
@@ -86,27 +92,32 @@
 					</div>
 
 					<div class="row d-none animated fadeInUp form-section" id="section-3">
-						<div class="col-xl-4">
+						<div class="col-xl-12">
 							<div class="submit-field">
-								<h5>Salary</h5>
+								<h5>Estimated Budget</h5>
 								<div class="row">
-									<div class="col-xl-6">
-										<div class="input-with-icon">
-											<input class="with-border" type="text" placeholder="Min" id="min">
-											<i class="currency">USD</i>
-										</div>
+									<div class="col-xl-3">
+										<select class="selectpicker with-border" id="currency">
+											<option>USD</option>
+											<option>EUR</option>
+											<option>GHS</option>
+										</select>
 									</div>
-									<div class="col-xl-6">
-										<div class="input-with-icon">
-											<input class="with-border" type="text" placeholder="Max" id="max">
-											<i class="currency">USD</i>
-										</div>
+									<div class="col-xl-9">
+										<select class="selectpicker with-border" id="pricing">
+											<option>Micro project ($10 - 30 USD)</option>
+											<option>Simple project ($30 - 250 USD)</option>
+											<option>Very small project ($250 - 750 USD)</option>
+											<option>Customize  Budget</option>
+										</select>
+
+										{{-- On customize budget selected show min and max fields --}}
 									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-4">
+						<div class="col-xl-12">
 							<div class="submit-field">
 								<h5>Skills <span>(e.g. HTML, SQL, React, Java)</span>  <i class="help-icon" data-tippy-placement="right" title="Maximum of 10 tags"></i></h5>
 								<div class="keywords-container">
@@ -153,7 +164,7 @@
 				var csID = closestSection.attr('id');
 				var sectionId = csID.split("-")[1];
 
-				var _isValidSection = isValidSection(sectionId);
+				var _isValidSection = true;// isValidSection(sectionId);
 
 				if(_isValidSection){
 					// Hide BTN 

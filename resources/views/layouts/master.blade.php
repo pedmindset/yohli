@@ -24,13 +24,8 @@
         <div class="clearfix"></div>
         <!-- Header Container / End -->
 
-        @if (Route::currentRouteName() == 'home' || Route::currentRouteName() == 'how-it-works')
-            
-        @else
-            <!-- Titlebar
-            ================================================== -->
-            @include('partials.title_bar')
-        @endif
+        <!-- The title bar is not a compulsory field -->
+        @yield('title_bar')
 
         @yield('content')
 

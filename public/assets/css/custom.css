@@ -35,6 +35,17 @@
 }
 
 
+/* Post Job Page */
+.pj-page .form-section {
+  margin-bottom: 20px;
+}
+
+.pj-page input::placeholder, textarea::placeholder {
+  color: #c6c7ca;
+  font-style: italic;
+}
+
+
 
 
 

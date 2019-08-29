@@ -1,5 +1,8 @@
 @extends('layouts.master')
 @section('title', 'Register')
+@section('title_bar')
+    @include('partials.title_bar')
+@endsection
 
 @section('content')
 <div class="container">
