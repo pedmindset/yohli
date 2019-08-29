@@ -41,20 +41,17 @@
 					
 					<div class="row d-none animated fadeInUp form-section" id="section-2">
 
-						<div class="col-xl-6">
+						{{-- <div class="col-xl-6">
 							<div class="submit-field">
 								<h5>Job Type</h5>
 								<select class="selectpicker with-border" data-size="7" title="Select Job Type" id="type">
-									<option>Full Time</option>
-									<option>Freelance</option>
-									<option>Part Time</option>
-									<option>Internship</option>
-									<option>Temporary</option>
+									<option>Short Term</option>
+									<option>Long Term</option>
 								</select>
 							</div>
-						</div>
+						</div> --}}
 
-						<div class="col-xl-6">
+						<div class="col-xl-12">
 							<div class="submit-field">
 								<h5>Job Category</h5>
 								<select class="selectpicker with-border" data-size="7" title="Select Category" id="category">									
