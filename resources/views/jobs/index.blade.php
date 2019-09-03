@@ -109,7 +109,7 @@
 					</div>
 					<div class="clearfix"></div>
 
-					<!-- More Skills -->
+					{{-- <!-- More Skills -->
 					<div class="keywords-container margin-top-20">
 						<div class="keyword-input-container">
 							<input type="text" class="keyword-input" placeholder="add more skills"/>
@@ -117,7 +117,7 @@
 						</div>
 						<div class="keywords-list"><!-- keywords go here --></div>
 						<div class="clearfix"></div>
-					</div>
+					</div> --}}
 				</div>
 				<div class="clearfix"></div>
 
