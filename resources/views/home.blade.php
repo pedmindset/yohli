@@ -174,7 +174,7 @@
 				<div class="tasks-list-container compact-list margin-top-35">
 						
 					<!-- Task -->
-					<a href="#" class="task-listing">
+					<a href="{{ route('jobs.show', 1) }}" class="task-listing">
 
 						<!-- Job Listing Details -->
 						<div class="task-listing-details">
@@ -208,7 +208,7 @@
 					</a>
 
 					<!-- Task -->
-					<a href="#" class="task-listing">
+					<a href="{{ route('jobs.show', 1) }}" class="task-listing">
 
 						<!-- Job Listing Details -->
 						<div class="task-listing-details">
@@ -241,7 +241,7 @@
 					</a>
 
 					<!-- Task -->
-					<a href="#" class="task-listing">
+					<a href="{{ route('jobs.show', 1) }}" class="task-listing">
 
 						<!-- Job Listing Details -->
 						<div class="task-listing-details">
@@ -274,7 +274,7 @@
 					</a>
 
 					<!-- Task -->
-					<a href="#" class="task-listing">
+					<a href="{{ route('jobs.show', 1) }}" class="task-listing">
 
 						<!-- Job Listing Details -->
 						<div class="task-listing-details">
@@ -306,7 +306,7 @@
 					</a>
 
 					<!-- Task -->
-					<a href="#" class="task-listing">
+					<a href="{{ route('jobs.show', 1) }}" class="task-listing">
 
 						<!-- Job Listing Details -->
 						<div class="task-listing-details">

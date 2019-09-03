@@ -22,7 +22,12 @@
 							</a>
 						</li>
 						<li>
-							<a href="#" class="{{ (request()->is('browse-jobs')) ? 'current' : '' }}">
+							<a href="{{ route('freelancers.index') }}" class="{{ (request()->is('browse-freelancers')) ? 'current' : '' }}">
+								Browse Freelancers
+							</a>
+						</li>
+						<li>
+							<a href="{{ route('jobs.index') }}" class="{{ (request()->is('browse-jobs')) ? 'current' : '' }}">
 								Browse Jobs
 							</a>
 						</li>

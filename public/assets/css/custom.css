@@ -45,6 +45,21 @@
   font-style: italic;
 }
 
+/* Single Jobs Page */
+.single-page-header .header-image {
+  height: 140px;
+  flex: 0 0 140px;
+  margin-right: 35px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  display: flex;
+  padding: 0 0px;
+}
+
+/* All Jobs Page */
+
+
 
 
 

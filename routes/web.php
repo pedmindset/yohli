@@ -34,7 +34,16 @@ Route::get('post-job', function () {
     return view('dashboard.post_job');
 })->name('post-job');
 
+
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
+
+// Jobs
+Route::get('browse-jobs', 'JobsController@index')->name('jobs.index');
+Route::resource('jobs', 'JobsController')->except('index');
+
+// Freelancers
+Route::get('browse-freelancers', 'FreelancersController@index')->name('freelancers.index');
+Route::resource('freelancers', 'FreelancersController')->except('index');
 
 
 Route::namespace("Auth")->group(function () {
