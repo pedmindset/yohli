@@ -96,8 +96,14 @@
 									<div class="col-xl-3">
 										<select class="selectpicker with-border" id="currency">
 											<option>USD</option>
-											<option>EUR</option>
 											<option>GHS</option>
+											<option>EUR</option>
+											<option>CAD</option>
+											<option>INR</option>
+											<option>GBP</option>
+											<option>AUD</option>
+											<option>HKD</option>
+											<option>NZD</option>
 										</select>
 									</div>
 									<div class="col-xl-9">

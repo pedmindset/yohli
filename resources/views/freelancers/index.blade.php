@@ -105,6 +105,7 @@
 					<span>Sort by:</span>
 					<select class="selectpicker hide-tick">
 						<option>Relevance</option>
+						<option>Rating</option>
 						<option>Newest</option>
 						<option>Oldest</option>
 					</select>
