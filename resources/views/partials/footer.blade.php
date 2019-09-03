@@ -13,7 +13,7 @@
 						<div class="footer-rows-left">
 							<div class="footer-row">
 								<div class="footer-row-inner footer-logo">
-									<img src="{{ asset('assets/images/logo2.png') }}" alt="">
+									<img src="{{ asset('assets/images/logo2.jpeg') }}" alt="">
 								</div>
 							</div>
 						</div>
