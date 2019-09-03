@@ -122,7 +122,7 @@
 
 						<div class="col-xl-12">
 							<div class="submit-field">
-								<h5>Skills <span>(e.g. HTML, SQL, React, Java)</span>  <i class="help-icon" data-tippy-placement="right" title="Maximum of 10 tags"></i></h5>
+								<h5>Skills <span>(e.g. HTML, SQL, React, Java)</span>  <i class="help-icon" data-tippy-placement="right" title="Give a list of skills required to complete the job."></i></h5>
 								<div class="keywords-container">
 									<div class="keyword-input-container">
 										<input id="skills" type="text" class="keyword-input with-border" placeholder="e.g. HTML, SQL, React, Java"/>
