@@ -39,7 +39,7 @@
 						</div>
 					</div>
 					
-					<div class="row d-none animated fadeInUp form-section" id="section-2">
+					<div class="row d-none form-section" id="section-2">
 
 						{{-- <div class="col-xl-6">
 							<div class="submit-field">

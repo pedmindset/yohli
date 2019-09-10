@@ -9,6 +9,10 @@
   display: none !important;
 }
 
+.submit-field .zindex-high {
+  overflow: visible;
+}
+
 
 /* -------------------------------------------------------------- */
 /* HOW IT WORKS PAGE */
