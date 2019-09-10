@@ -34,6 +34,40 @@ Route::get('post-job', function () {
     return view('dashboard.post_job');
 })->name('post-job');
 
+Route::get('new-jobs', function () {
+    return view('dashboard.jobs.new_jobs');
+})->name('new-jobs');
+
+Route::get('ongoing-jobs', function () {
+    return view('dashboard.jobs.ongoing_jobs');
+})->name('ongoing-jobs');
+
+Route::get('bidders/{id}', function () {
+    return view('dashboard.bidders');
+})->name('bidders');
+
+Route::get('my-bids', function () {
+    return view('dashboard.my_bids');
+})->name('my-bids');
+
+Route::get('messages', function () {
+    return view('dashboard.messages');
+})->name('messages');
+
+Route::get('settings', function () {
+    return view('dashboard.settings');
+})->name('settings');
+
+Route::get('milestones/{id}', function () {
+    return view('dashboard.milestones');
+})->name('milestones');
+
+
+// Finances
+Route::get('add-funds', function () {
+    return view('dashboard.finances.add_funds');
+})->name('add-funds');
+
 
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 

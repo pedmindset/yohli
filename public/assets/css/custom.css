@@ -84,6 +84,83 @@
 
 
 /*--------------------------------------------------*/
+/*  Timelines
+/*--------------------------------------------------*/
+/* Timeline */
+.timeline {
+  border-left: 4px solid #EA7C11;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 32px;
+  position: relative;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+}
+.timeline h1 {
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+.timeline .event {
+  border-bottom: 1px dashed #EA7C11;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #EA7C11;
+  left: -57.85px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+
+.timeline .done:after {
+  background: #19fc7f;
+}
+.timeline .notdone:after {
+  background: #f4f4f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------*/
 /*  Custom Tabs
 /*--------------------------------------------------*/
 

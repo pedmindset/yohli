@@ -138,7 +138,10 @@
 						<option>Relevance</option>
 						<option>Newest</option>
 						<option>Oldest</option>
-						<option>Random</option>
+						<option>Lowest Price</option>
+						<option>Highest Price</option>
+						<option>Most Bids</option>
+						<option>Fewest Bids</option>
 					</select>
 				</div>
 			</div>

@@ -105,13 +105,21 @@
 									<div class="user-name">
 										Tom Smith <span>Freelancer</span>
 									</div>
-								</div>	
+								</div>
+								
+								<!-- User Status Switcher -->
+								<div class="status-switch" id="snackbar-user-status">
+									<label class="user-online current-status">Freelancer</label>
+									<label class="user-invisible">Hirer</label>
+									<!-- Status Indicator -->
+									<span class="status-indicator" aria-hidden="true"></span>
+								</div>
 						</div>
 						
 						<ul class="user-menu-small-nav">
-							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
-							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
-							<li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+							<li><a href="{{ route('dashboard') }}"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="{{ route('settings') }}"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="#"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
 						</ul>
 
 						</div>
