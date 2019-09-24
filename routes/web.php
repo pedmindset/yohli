@@ -68,6 +68,10 @@ Route::get('add-funds', function () {
     return view('dashboard.finances.add_funds');
 })->name('add-funds');
 
+Route::get('withdraw-funds', function () {
+    return view('dashboard.finances.withdraw_funds');
+})->name('withdraw-funds');
+
 
 Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 

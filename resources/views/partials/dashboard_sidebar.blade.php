@@ -49,7 +49,7 @@
 								</a>
 								<ul>
 									<li><a href="{{ route('add-funds') }}">Add Funds </a></li>
-									<li><a href="#">Withdraw Funds </a></li>
+									<li><a href="{{ route('withdraw-funds') }}">Withdraw Funds </a></li>
 									<li><a href="#">Transaction History</a></li>
 								</ul>	
 							</li>

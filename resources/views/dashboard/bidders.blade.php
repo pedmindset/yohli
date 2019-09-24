@@ -57,7 +57,7 @@ Bids for <a href="#">Food Delivery Mobile Application</a>
                                     <div class="buttons-to-right always-visible margin-top-25 margin-bottom-0">
                                         <a href="#small-dialog-1"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Accept Offer</a>
                                         <a href="#small-dialog-2" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
-                                        <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                                        {{-- <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ Bids for <a href="#">Food Delivery Mobile Application</a>
                                     <div class="buttons-to-right always-visible margin-top-25 margin-bottom-0">
                                         <a href="#small-dialog-1"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Accept Offer</a>
                                         <a href="#small-dialog-2" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
-                                        <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                                        {{-- <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a> --}}
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ Bids for <a href="#">Food Delivery Mobile Application</a>
                                     <div class="buttons-to-right always-visible margin-top-25 margin-bottom-0">
                                         <a href="#small-dialog-1"  class="popup-with-zoom-anim button ripple-effect"><i class="icon-material-outline-check"></i> Accept Offer</a>
                                         <a href="#small-dialog-2" class="popup-with-zoom-anim button dark ripple-effect"><i class="icon-feather-mail"></i> Send Message</a>
-                                        <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a>
+                                        {{-- <a href="#" class="button gray ripple-effect ico" title="Remove Bid" data-tippy-placement="top"><i class="icon-feather-trash-2"></i></a> --}}
                                     </div>
                                 </div>
                             </div>
