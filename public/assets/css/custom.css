@@ -13,6 +13,11 @@
   overflow: visible;
 }
 
+.btn-xs {
+  font-size: 12px !important;
+  padding: 4px 8px !important;
+}
+
 
 /* -------------------------------------------------------------- */
 /* HOW IT WORKS PAGE */
