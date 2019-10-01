@@ -17,17 +17,16 @@
 				</div>
 
 				<!-- Account Type -->
-				{{--  <div class="account-type">
+			  <div class="account-type">
 					<div>
 						<input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
 						<label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
 					</div>
-
 					<div>
 						<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
 						<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
 					</div>
-				</div>  --}}
+				</div>  
 					
 				<!-- Form -->
 				<form method="post" id="register-account-form">

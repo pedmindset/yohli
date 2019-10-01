@@ -14,6 +14,11 @@
 Auth::routes();
 
 
+Route::namespace("Auth")->group(function () {
+    Route::get('login/{provider}', 'LoginController@redirectToProvider');
+    Route::get('login/{provider}/callback', 'LoginController@handleProviderCallback');
+});
+
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -84,7 +89,3 @@ Route::get('browse-freelancers', 'FreelancersController@index')->name('freelance
 Route::resource('freelancers', 'FreelancersController')->except('index');
 
 
-Route::namespace("Auth")->group(function () {
-    Route::get('login/{provider}', 'LoginController@redirectToProvider');
-    Route::get('login/{provider}/callback', 'LoginController@handleProviderCallback');
-});

@@ -9,19 +9,46 @@
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "cloudstudio/resource-generator": "^1.4",
+        "coreproc/nova-auditing-user-fields": "^0.1.0",
+        "davidpiesse/nova-maintenance-mode": "^0.0.5",
+        "digitalcloud/nova-resource-notes": "^1.4",
+        "dniccum/custom-email-sender": "^1.1",
+        "ebess/advanced-nova-media-library": "^2.9",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "5.8.*",
+        "genealabs/nova-passport-manager": "*",
+        "gregoriohc/laravel-nova-theme-responsive": "^0.6.2",
+        "itainathaniel/nova-admin-notes": "^1.0",
+        "laravel/cashier": "^10.3",
+        "laravel/framework": "6.0.*",
+        "laravel/nova": "~2.4.0",
+        "laravel/passport": "^7.5",
         "laravel/socialite": "^4.1",
-        "laravel/tinker": "^1.0"
+        "laravel/telescope": "^2.1",
+        "laravel/tinker": "^1.0",
+        "maatwebsite/laravel-nova-excel": "^1.1",
+        "owen-it/laravel-auditing": "^9.3",
+        "spatie/laravel-medialibrary": "^7.0.0",
+        "spatie/laravel-permission": "^3.0",
+        "spatie/laravel-schemaless-attributes": "^1.6",
+        "spatie/nova-backup-tool": "^3.5",
+        "vyuldashev/nova-permission": "^2.1"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
         "filp/whoops": "^2.0",
         "fzaninotto/faker": "^1.4",
+        "laracasts/generators": "^1.1",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^7.5"
     },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://nova.laravel.com"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
