@@ -13,7 +13,7 @@ class CreateProfileSocialProfilePivotTable extends Migration
     public function up()
     {
         Schema::create('profile_social_profile', function (Blueprint $table) {
-            $table->integer('profile_id')->unsigned()->index();
+            $table->BigInteger('profile_id')->unsigned()->index();
             $table->foreign('profile_id')->references('id')->on('profiles')->onDelete('cascade');
             $table->integer('social_profile_id')->unsigned()->index();
             $table->foreign('social_profile_id')->references('id')->on('social_profiles')->onDelete('cascade');

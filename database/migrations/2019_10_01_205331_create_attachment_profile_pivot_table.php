@@ -13,9 +13,9 @@ class CreateAttachmentProfilePivotTable extends Migration
     public function up()
     {
         Schema::create('attachment_profile', function (Blueprint $table) {
-            $table->integer('attachment_id')->unsigned()->index();
+            $table->BigInteger('attachment_id')->unsigned()->index();
             $table->foreign('attachment_id')->references('id')->on('attachments')->onDelete('cascade');
-            $table->integer('profile_id')->unsigned()->index();
+            $table->BigInteger('profile_id')->unsigned()->index();
             $table->foreign('profile_id')->references('id')->on('profiles')->onDelete('cascade');
             $table->primary(['attachment_id', 'profile_id']);
         });
