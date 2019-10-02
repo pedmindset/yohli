@@ -12,7 +12,7 @@ class CreateProfilesTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('profiles');
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->BigInteger('user_id')->index()->unsigned();
@@ -36,6 +36,6 @@ class CreateProfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profile');
+        Schema::dropIfExists('profiles');
     }
 }
