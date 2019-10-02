@@ -12,6 +12,7 @@ class CreateProfilesTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('profile');
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->BigInteger('user_id')->index()->unsigned();
