@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBlogPosts extends Migration
+class CreateJobBudgetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,10 @@ class CreateBlogPosts extends Migration
      */
     public function up()
     {
-        Schema::create('blog_posts', function (Blueprint $table) {
+        Schema::create('job_budgets', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title')->nullable();
-            $table->string('featured')->nullable();
-            $table->bigInteger('count')->nullable();
-            $table->text('body')->nullable();
+            $table->string('budget')->nullable();
+            $table->json('options')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateBlogPosts extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blog_posts');
+        Schema::dropIfExists('job_budgets');
     }
 }

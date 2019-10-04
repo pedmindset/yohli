@@ -21,9 +21,11 @@ class CreateProfilesTable extends Migration
             $table->string('phone')->nullable()->email()->string();
             $table->string('address')->nullable();
             $table->string('city')->nullable();
-            $table->string('country')->nullable();
+            $table->Integer('country_id')->index()->unsigned()->nullable();
+            $table->foreign('country_id')->references('id')->on('countries');            
             $table->integer('verified')->default(0)->nullable();
             $table->decimal('rate', 13, 2)->nullable();
+            $table->json('options')->nullable();
             $table->timestamps();
         });
     }

@@ -14,6 +14,8 @@ class CreateAttachments extends Migration
     {
         Schema::create('attachments', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('attachment_types_id')->unsigned()->index()->nullable();
+            $table->foreign('attachment_types_id')->references('id')->on('attachment_types');
             $table->string('name')->nullable();
             $table->json('options');
             $table->timestamps();
