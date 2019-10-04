@@ -15,7 +15,7 @@ class CreateJobSkillPivotTable extends Migration
         Schema::create('job_skill', function (Blueprint $table) {
             $table->bigInteger('job_id')->unsigned()->index();
             $table->foreign('job_id')->references('id')->on('jobs')->onDelete('cascade');
-            $table->integer('skill_id')->unsigned()->index();
+            $table->bigInteger('skill_id')->unsigned()->index();
             $table->foreign('skill_id')->references('id')->on('skills')->onDelete('cascade');
             $table->primary(['job_id', 'skill_id']);
         });
