@@ -7,13 +7,13 @@
     },
     "namespace": {
         "name": "Namespace",
-        "value": "App",
+        "value": "App\\Models",
         "type": "String",
         "help": "Default namespace for models ( Do not end with / )"
     },
     "model": {
         "name": "Model",
-        "value": false,
+        "value": true,
         "type": "Boolean",
         "help": "Set default check for model creation"
     },

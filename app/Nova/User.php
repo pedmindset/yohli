@@ -5,8 +5,12 @@ namespace App\Nova;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\HasOne;
 use Laravel\Nova\Fields\Gravatar;
 use Laravel\Nova\Fields\Password;
+use Coreproc\NovaAuditingUserFields\CreatedBy;
+use Coreproc\NovaAuditingUserFields\UpdatedBy;
+use DigitalCloud\NovaResourceNotes\Fields\Notes;
 
 class User extends Resource
 {
@@ -15,7 +19,7 @@ class User extends Resource
      *
      * @var string
      */
-    public static $model = 'App\\User';
+    public static $model = 'App\\Models\\User';
 
     /**
      * The single value that should be used to represent the resource when being displayed.
@@ -60,6 +64,15 @@ class User extends Resource
                 ->onlyOnForms()
                 ->creationRules('required', 'string', 'min:8')
                 ->updateRules('nullable', 'string', 'min:8'),
+
+            CreatedBy::make('Created By'),
+
+            UpdatedBy::make('Updated By')->onlyOnDetail(),
+
+            Notes::make('Notes','notes')->onlyOnDetail(),
+            
+            HasOne::make('Profile')
+
         ];
     }
 

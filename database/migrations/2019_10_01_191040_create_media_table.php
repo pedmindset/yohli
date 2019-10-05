@@ -26,6 +26,7 @@ class CreateMediaTable extends Migration
             $table->unsignedInteger('order_column')->nullable();
             $table->nullableTimestamps();
         });
+        
     }
 
     /**

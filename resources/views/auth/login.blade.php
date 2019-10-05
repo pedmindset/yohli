@@ -14,7 +14,7 @@
 				<!-- Welcome Text -->
 				<div class="welcome-text">
 					<h3>We're glad to see you again!</h3>
-					<span>Don't have an account? <a href="{{ route('register.page') }}">Sign Up!</a></span>
+					<span>Don't have an account? <a href="register">Sign Up!</a></span>
 				</div>
 					
 				<!-- Form -->

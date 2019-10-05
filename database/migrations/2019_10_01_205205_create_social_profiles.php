@@ -13,7 +13,7 @@ class CreateSocialProfiles extends Migration
     public function up()
     {
         Schema::create('social_profiles', function (Blueprint $table) {
-            $table->increments('id');
+            $table->bigIncrements('id');
             $table->string('name')->nullable();
             $table->json('options');
             $table->timestamps();

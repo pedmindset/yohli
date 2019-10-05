@@ -13,7 +13,6 @@
 
 Auth::routes();
 
-
 Route::namespace("Auth")->group(function () {
     Route::get('login/{provider}', 'LoginController@redirectToProvider');
     Route::get('login/{provider}/callback', 'LoginController@handleProviderCallback');
@@ -89,3 +88,7 @@ Route::get('browse-freelancers', 'FreelancersController@index')->name('freelance
 Route::resource('freelancers', 'FreelancersController')->except('index');
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

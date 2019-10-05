@@ -6,6 +6,7 @@ use Laravel\Nova\Nova;
 use Laravel\Nova\Cards\Help;
 use Illuminate\Support\Facades\Gate;
 use Laravel\Nova\NovaApplicationServiceProvider;
+use Genealabs\NovaPassportManager\NovaPassportManager;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -56,7 +57,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function cards()
     {
         return [
-            new Help,
+            // new Help,
         ];
     }
 
@@ -79,9 +80,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         return [
             \Vyuldashev\NovaPermission\NovaPermissionTool::make(),
-            new GeneaLabs\NovaPassportManager\NovaPassportManager,
-            new Dniccum\CustomEmailSender\CustomEmailSender(),
-            new DigitalCloud\NovaBlogTool\NovaBlogTool(),
+            new NovaPassportManager,
+            new \Dniccum\CustomEmailSender\CustomEmailSender(),
             new \Davidpiesse\NovaMaintenanceMode\Tool(),
             new \Spatie\BackupTool\BackupTool(),     
             new \Cloudstudio\ResourceGenerator\ResourceGenerator(),

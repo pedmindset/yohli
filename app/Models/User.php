@@ -1,14 +1,22 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Spatie\Permission\Traits\HasRoles;
+use Laravel\Passport\HasApiTokens;
+use DigitalCloud\ModelNotes\HasNotes;
+use OwenIt\Auditing\Contracts\Auditable;
+use OwenIt\Auditing\Auditable as AuditTrait;
 
-class User extends Authenticatable
+
+class User extends Authenticatable implements Auditable
 {
-    use Notifiable;
+    use Notifiable, HasRoles, HasApiTokens, HasNotes, AuditTrait;
+
+    protected $guard_name = 'web';
 
     /**
      * The attributes that are mass assignable.
@@ -36,4 +44,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function profile()
+    {
+        return $this->hasOne('App\Models\Profile');
+    }
 }
