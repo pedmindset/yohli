@@ -44,7 +44,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         Gate::define('viewNova', function ($user) {
             return in_array($user->email, [
-                //
+                'emmarthurson@gmail.com',
+                'emmanuel@jumeni.com'
             ]);
         });
     }
@@ -83,8 +84,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             new NovaPassportManager,
             new \Dniccum\CustomEmailSender\CustomEmailSender(),
             new \Davidpiesse\NovaMaintenanceMode\Tool(),
-            new \Spatie\BackupTool\BackupTool(),     
-            new \Cloudstudio\ResourceGenerator\ResourceGenerator(),
+            new \Spatie\BackupTool\BackupTool(), 
+            // new \Cloudstudio\ResourceGenerator\ResourceGenerator(),
             new \Itainathaniel\AdminNotes\AdminNotes(),
         ];
     }
