@@ -18,18 +18,32 @@
 				</div>
 					
 				<!-- Form -->
-				<form method="post" id="login-form">
+				<form method="POST" id="login-form" action="{{ route('login') }}">
+                        @csrf
+                    @if ($errors->has('email'))
+                    <span class="text-sm text-red-500">
+                        <strong> {{ $errors->first('email') }}</strong>
+                    </span>
+                    @endif
 					<div class="input-with-icon-left">
 						<i class="icon-material-baseline-mail-outline"></i>
-						<input type="text" class="input-text with-border" name="emailaddress" id="emailaddress" placeholder="Email Address" required/>
+						<input type="text" class="input-text with-border" value="{{ old('name') }}" name="email" id="email" placeholder="Email Address" required/>
 					</div>
-
+                    @if ($errors->has('password'))
+                        <span class="text-sm text-red-500">
+                            <strong> {{ $errors->first('password') }}</strong>
+                        </span>
+                    @endif
 					<div class="input-with-icon-left">
 						<i class="icon-material-outline-lock"></i>
 						<input type="password" class="input-text with-border" name="password" id="password" placeholder="Password" required/>
-					</div>
-					<a href="#" class="forgot-password">Forgot Password?</a>
-				</form>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }} id="rememeber">
+                        <label for="rememeber"><span class="checkbox-icon"></span> rememeber me</label>
+                    </div>
+
+					<a  href="{{ route('password.request') }}" class="forgot-password">Forgot Password?</a>
 				
 				<!-- Button -->
 				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Log In <i class="icon-material-outline-arrow-right-alt"></i></button>
@@ -41,6 +55,8 @@
 					<button class="google-login ripple-effect"><i class="icon-brand-google-plus-g"></i> Log In via Google+</button>
 				</div>
 			</div>
+            </form>
+
 
 		</div>
 	</div>

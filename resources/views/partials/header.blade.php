@@ -9,7 +9,7 @@
 				
 				<!-- Logo -->
 				<div id="logo">
-					<a href="{{ route('home') }}"><img src="{{ asset('assets/images/logo.png') }}" alt=""></a>
+					<a href="{{ route('home') }}"><img class="mt-10" src="{{ asset('assets/images/logo.png') }}" alt=""></a>
 				</div>
 
 				<!-- Main Navigation -->

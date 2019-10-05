@@ -3,7 +3,6 @@
 @section('title_bar')
     @include('partials.title_bar')
 @endsection
-@include('partials.tailwind')
 
 @section('content')
 <div class="container">
