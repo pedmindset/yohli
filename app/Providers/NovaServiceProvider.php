@@ -85,7 +85,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
             new \Dniccum\CustomEmailSender\CustomEmailSender(),
             new \Davidpiesse\NovaMaintenanceMode\Tool(),
             new \Spatie\BackupTool\BackupTool(), 
-            new \Cloudstudio\ResourceGenerator\ResourceGenerator(),
+            // new \Cloudstudio\ResourceGenerator\ResourceGenerator(),
             new \Itainathaniel\AdminNotes\AdminNotes(),
         ];
     }
